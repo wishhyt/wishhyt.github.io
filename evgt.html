@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; frame-src blob:; object-src blob:; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; font-src 'self' blob:; connect-src 'self'; worker-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>EVGT | Yutong Huang</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261003-viewonly">
+  <script src="app.js?v=20261003-viewonly" type="module"></script>
 </head>
 <body data-paper="evgt">
   <main class="shell">
@@ -20,11 +20,24 @@
     <section class="library" id="library" hidden aria-labelledby="paper-title">
       <h1 id="paper-title" tabindex="-1">Research papers</h1>
       <div id="viewer">
-        <div class="viewer-tools">
-          <a class="button" id="open-pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-          <a class="button" id="download" download>Download PDF</a>
+        <div class="viewer-tools" role="toolbar" aria-label="Paper navigation">
+          <div class="page-tools">
+            <button id="previous-page" type="button" disabled>Previous</button>
+            <label for="page-number" class="sr-only">Page number</label>
+            <input id="page-number" class="page-number" type="number" min="1" max="1" value="1" disabled>
+            <span class="page-count">of <span id="page-count">—</span></span>
+            <button id="next-page" type="button" disabled>Next</button>
+          </div>
+          <div class="zoom-tools">
+            <button id="zoom-out" type="button" aria-label="Zoom out" disabled>−</button>
+            <span id="zoom-level" class="zoom-level">100%</span>
+            <button id="zoom-in" type="button" aria-label="Zoom in" disabled>+</button>
+            <span class="view-mode">View-only preview</span>
+          </div>
         </div>
-        <iframe id="paper-frame" title="Research manuscript"></iframe>
+        <div id="paper-viewport" class="paper-viewport" role="region" aria-label="Paper preview" tabindex="0">
+          <div class="paper-surface"><canvas id="paper-canvas" width="0" height="0" role="img" aria-label="Paper page"></canvas></div>
+        </div>
       </div>
     </section>
     <p id="status" class="status" role="status" aria-live="polite"></p>
