@@ -1,0 +1,4 @@
+*.pdf
+.secrets/
+*.password
+node_modules/

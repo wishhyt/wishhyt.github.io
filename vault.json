@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "owner": "Yutong Huang",
+  "documents": [
+    {
+      "id": "evgt",
+      "title": "EVGT: Embodied Visual Geometry Transformer",
+      "subtitle": "ICLR 2027 submission",
+      "filename": "EVGT.pdf",
+      "file": "evgt.enc",
+      "aad": "paper-vault/pdf/evgt/v1",
+      "bytes": 5290037,
+      "sha256": "471d6c0ee9250d302b3bd91643661921845f7e043c343822b0ae903e8b194010"
+    },
+    {
+      "id": "infer-fuse",
+      "title": "Infer&Fuse: An Effective Decompose-then-Compose Framework for Long-Text-to-Image Generation",
+      "subtitle": "AAAI 2027 submission",
+      "filename": "Infer-Fuse.pdf",
+      "file": "infer-fuse.enc",
+      "aad": "paper-vault/pdf/infer-fuse/v1",
+      "bytes": 4785947,
+      "sha256": "6c021e9593b16e5076ad4d377161caaf4f5b9485bcdeb92cceebd34e0bd5eabf"
+    },
+    {
+      "id": "ocd",
+      "title": "OCD: Object Change Distillation for One-Shot Multi-Edit Image Editing",
+      "subtitle": "Research manuscript",
+      "filename": "OCD.pdf",
+      "file": "ocd.enc",
+      "aad": "paper-vault/pdf/ocd/v1",
+      "bytes": 8292182,
+      "sha256": "372596ec604b96cf15c0660f830d49951fbef124f11e855be18117cbcb2d14f5"
+    }
+  ]
+}
