@@ -6,6 +6,6 @@ The new paper reader loads encrypted `.enc` document copies. Each paper uses a s
 
 Owner passwords, private salts, access links, plaintext manuscripts, and keys must not be committed. Anyone holding a complete access link can read its paper. Previously downloaded manuscript copies cannot be recalled.
 
-Legacy plaintext PDFs from the previous website remain public in this repository and its history until the approved repository migration. These old copies are not protected by the new reader links. EVGT is uploaded only as ciphertext.
+Legacy plaintext PDFs have been removed from the published branch. Older public Git commits still contain those copies until a private-backup migration is approved and completed. The canvas preview does not protect historical copies. EVGT is uploaded only as ciphertext.
 
 The preview removes ordinary download and print controls; it is not DRM. An authorized reader can still capture the screen or recover data received by their browser. PDF.js 6.3.289 is vendored from the official npm package; licensing notices are included as PDFJS_LICENSE* files.
