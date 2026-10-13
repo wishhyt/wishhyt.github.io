@@ -1,0 +1,6 @@
+@import url('./style.css?v=20261003-viewonly');
+
+.document-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.document-tabs button[aria-pressed="true"] { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.paper-viewport { height: calc(100dvh - 340px); }
+@media (max-width: 640px) { .paper-viewport { height: 62dvh; } }

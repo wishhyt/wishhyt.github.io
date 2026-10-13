@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; font-src 'self' blob:; connect-src 'self'; worker-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Application Materials | Yutong Huang</title>
+  <link rel="stylesheet" href="materials.css?v=20261013">
+  <script src="materials.js?v=20261013" type="module"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><p class="owner">Yutong Huang</p></header>
+    <section class="gate" id="gate" aria-labelledby="gate-title">
+      <h1 id="gate-title">Opening your document</h1>
+      <p class="intro" id="introduction">Verifying access...</p>
+    </section>
+    <section class="library" id="library" hidden aria-labelledby="paper-title">
+      <nav class="document-tabs" aria-label="Application documents">
+        <button type="button" data-document="cv" aria-pressed="false" disabled>CV</button>
+        <button type="button" data-document="transcript" aria-pressed="false" disabled>Transcript</button>
+      </nav>
+      <h1 id="paper-title" tabindex="-1">Application Materials</h1>
+      <div id="viewer">
+        <div class="viewer-tools" role="toolbar" aria-label="Document navigation">
+          <div class="page-tools">
+            <button id="previous-page" type="button" disabled>Previous</button>
+            <label for="page-number" class="sr-only">Page number</label>
+            <input id="page-number" class="page-number" type="number" min="1" max="1" value="1" disabled>
+            <span class="page-count">of <span id="page-count">—</span></span>
+            <button id="next-page" type="button" disabled>Next</button>
+          </div>
+          <div class="zoom-tools">
+            <button id="zoom-out" type="button" aria-label="Zoom out" disabled>−</button>
+            <span id="zoom-level" class="zoom-level">100%</span>
+            <button id="zoom-in" type="button" aria-label="Zoom in" disabled>+</button>
+            <span class="view-mode">View-only preview</span>
+          </div>
+        </div>
+        <div id="paper-viewport" class="paper-viewport" role="region" aria-label="Document preview" tabindex="0">
+          <div class="paper-surface"><canvas id="paper-canvas" width="0" height="0" role="img" aria-label="Document page"></canvas></div>
+        </div>
+      </div>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <p class="footer">Access shared by the author.</p>
+  </main>
+</body>
+</html>

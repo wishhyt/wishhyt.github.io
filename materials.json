@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "owner": "Yutong Huang",
+  "documents": [
+    {
+      "id": "cv",
+      "title": "Curriculum Vitae",
+      "filename": "Yutong_Huang_CV.pdf",
+      "file": "cv.enc",
+      "aad": "paper-vault/pdf/cv/v1",
+      "bytes": 32912,
+      "sha256": "1d637757e2645fdb685ac8a2297a33e137c3b3894c568f74ea800d1f28cefa85"
+    },
+    {
+      "id": "transcript",
+      "title": "Academic Transcript",
+      "filename": "transcripts.pdf",
+      "file": "transcript.enc",
+      "aad": "paper-vault/pdf/transcript/v1",
+      "bytes": 9997858,
+      "sha256": "4005136dc0f0594026caf1b208ae4415acde3905add6ba0092a263629c9e4d53"
+    }
+  ]
+}
